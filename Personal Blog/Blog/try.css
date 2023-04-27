@@ -1,0 +1,54 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	width: 500px;
+	height: 400px;
+	border: 2px solid black;
+	background: linear-gradient(-45deg, #002600, #008700, #3CE889, #44BEED);
+	background-size: 200% 200%;
+	animation: Gradient 10s ease infinite;
+	position: absolute;
+	left: 34%;
+	top: 300px;
+}
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+a {
+	list-style: none;
+	width: 60px;
+	height: 60px;
+	margin: 30px 30px;
+	padding: 25px;
+	display: inline-block;
+	text-align: center;
+	position: relative;
+	top: 30px;
+	left: 70px;
+	font-size: 60px;
+	color: #fff;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	transition: 0.5s;
+}
+
+a:hover {
+	color: #292929;
+	border: 1px solid #292929;
+	cursor: pointer;
+	transition: 0.5s;
+}
+

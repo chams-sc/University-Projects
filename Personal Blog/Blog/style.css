@@ -1,0 +1,245 @@
+@font-face {
+	src: url(fonts/ROMANUS.otf);
+	font-family: Romanus;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: Romanus
+}
+
+body {
+	background: url(img/plant1.jpg) no-repeat top center;
+	background-size: cover;
+	height: 100vh;
+}
+
+/* navigation bar */
+nav {
+	width: 60%;
+	height: 70px;
+	background-color: #002600;
+	float: right;
+
+}
+
+ul li {
+	list-style-type: none;
+	display: inline-block;
+	float: left;
+	line-height: 70px;
+}
+
+ul li a {
+	display: block;
+	text-decoration: none;
+	color: white;
+	font-size: 30px;
+	padding: 0 20px;
+	letter-spacing: 2px;
+	transition: 0.6s ease;
+}
+
+ul li a:hover {
+	background-color: white;
+	color: #002600;
+}
+
+nav ul li.active a {
+	background-color: white;
+	color: #002600;
+}
+
+/* marquee */
+.marquee {
+	width: 35%;
+	height: 50px;
+	position: relative;
+	left: 35px;
+	top: 7px;
+	border-top: 5px double #BDFFB7;
+	border-bottom: 5px double #BDFFB7;
+	border-radius: 6px;
+
+}
+
+.marquee-text {
+	font-size: 20px;
+	font-family: Verdana;
+	line-height: 50px;
+	color: white;
+	text-shadow: 2px 2px 0px #002600;
+	text-transform: uppercase;
+}
+
+
+/* welcome to page */
+.welcome {
+	width: 500px;
+	height: 120px;
+	position: absolute;
+	top: 35%;
+	right: 5%;
+}
+
+.welcome h1 {
+	font-size: 80px;
+	text-align: center;
+	font-family: Droid Sans;
+	color: #fff;
+}
+
+.welcome h5 {
+	text-align: center;
+	font-family: Droid Sans;
+	color: #fff;
+}
+
+/* gallery*/
+.slidershow {
+	width: 300px;
+	height: 300px;
+	border-radius: 10px;
+	box-shadow: 5px 5px 15px 5px #000000;
+	overflow: hidden;
+}
+
+.left {
+	position: absolute;
+	top: 20%;
+	left: 5%;
+}
+
+.navigation {
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+}
+
+.bar {
+	width: 50px;
+	height: 10px;
+	border: 2px solid #fff;
+	margin: 6px;
+	cursor: pointer;
+	transition: 0.4s;
+}
+
+.bar:hover {
+	background: #fff;
+}
+
+input[name="r"] {
+	position: absolute;
+	visibility: hidden;
+}
+
+
+.slides {
+	width: 500%;
+	height: 100%;
+	display: flex;
+}
+
+.slide {
+	width: 20%;
+	transition: 0.6s;
+}
+
+.slide img {
+	width: 100%;
+	height: 100%;
+}
+
+#r1:checked ~ .s1 {
+	margin-left: 0;
+}
+
+#r2:checked ~ .s1 {
+	margin-left: -20%;
+}
+
+#r3:checked ~ .s1 {
+	margin-left: -40%;
+}
+
+/* self info */
+.me-bar {
+	width: 500px;
+	height: 170px;
+	position: absolute;
+	left: 400px;
+	top: 30%;
+	border-top: 3px groove #002600;
+	border-bottom: 3px groove #002600;
+	display: flex;
+	align-items: center;
+}
+
+.me-bar p{
+	color: white;
+	font-family: Droid Sans;
+	letter-spacing: 1px;
+	text-align: justify;
+	padding: 1rem;
+}
+
+.name-bar {
+	background-color: transparent;
+	color: white;
+	font-size: 25px;
+	letter-spacing: 3px;
+	position: absolute;
+	top: 22%;
+	left: 400px;
+	padding: 1rem;
+}
+
+.me-bar2 {
+	width: 500px;
+	height: 100px;
+	position: absolute;
+	bottom: 30%;
+	right: 5%;
+	border-top: 3px groove #002600;
+	border-bottom: 3px groove #002600;
+	display: flex;
+	align-items: center;
+}
+
+.me-bar2 p{
+	color: white;
+	font-family: Droid Sans;
+	font-style: italic;
+	text-align: justify;
+	letter-spacing: 1px;
+	padding: 1rem;
+}
+
+/* engage button */
+.myButton {
+	box-shadow: 0px 10px 14px -7px #081c08;
+	background:linear-gradient(to bottom, #4ea34e 5%, #002600 100%);
+	background-color:#4ea34e;
+	border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:20px;
+	font-weight:bold;
+	padding:13px 32px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #468246;
+	position: absolute;
+	bottom: 20%;
+	right: 270px;
+}
+
+.myButton:hover {
+	background:linear-gradient(to bottom, #002600 5%, #4ea34e 100%);
+	background-color:#002600;
+}

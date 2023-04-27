@@ -1,0 +1,173 @@
+@font-face {
+	src: url(fonts/ROMANUS.otf);
+	font-family: Romanus;
+}
+
+@font-face {
+	src: url(fonts/Handwriting.ttf);
+	font-family: Handwritten;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: Romanus;
+}
+
+
+/* navigation bar */
+nav {
+	width: 60%;
+	height: 70px;
+	background-color: #002600;
+	float: right;
+
+}
+
+ul li {
+	list-style-type: none;
+	display: inline-block;
+	float: left;
+	line-height: 70px;
+}
+
+ul li a {
+	display: block;
+	text-decoration: none;
+	color: white;
+	font-size: 30px;
+	padding: 0 20px;
+	letter-spacing: 2px;
+	transition: 0.6s ease;
+}
+
+ul li a:hover {
+	background-color: white;
+	color: #002600;
+}
+
+nav ul li.active a {
+	background-color: white;
+	color: #002600;
+}
+
+/* marquee */
+.marquee {
+	width: 35%;
+	height: 50px;
+	position: relative;
+	left: 35px;
+	top: 7px;
+	border-top: 5px double #BDFFB7;
+	border-bottom: 5px double #BDFFB7;
+	border-radius: 6px;
+
+}
+
+.marquee-text {
+	font-size: 20px;
+	font-family: Verdana;
+	line-height: 50px;
+	color: white;
+	text-shadow: 2px 2px 0px #002600;
+	text-transform: uppercase;
+}
+
+/* header */
+
+.header {
+	background: url(img/plant1.jpg) no-repeat top center;
+	background-size: cover;
+	background-position: center;
+	height: 350px;
+	position: relative;
+}
+
+.title-content {
+	width: 350px;
+	height: 100px;
+	position: absolute;
+	bottom: 100px;
+	left: 40%;
+}
+
+.title-content h1 {
+	font-size: 70px;
+	font-family: Handwritten;
+	color: white;
+	text-align: center;
+	letter-spacing: 2px;
+}
+
+.title-content p {
+	font-family: Droid Sans;
+	letter-spacing: 1px;
+	text-align: center;
+	color: #fff;
+}
+
+/* Mic's World */
+
+.my-world {
+	width: 300px;
+	height: 150px;
+	position: relative;
+	top: 20px;
+	left: 30px;
+}
+
+.my-world h1{
+	font-size: 70px;
+	text-align: center;
+	color: #fff;
+	letter-spacing: 5px;
+}
+
+/* Contact me */
+.container {
+	width: 500px;
+	height: 400px;
+	background: linear-gradient(-45deg, #002600, #008700, #3CE889, #44BEED);
+	background-size: 200% 200%;
+	animation: Gradient 10s ease infinite;
+	position: absolute;
+	left: 34%;
+	top: 300px;
+}
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+.container a {
+	list-style: none;
+	width: 60px;
+	height: 60px;
+	margin: 30px 30px;
+	padding: 25px;
+	display: inline-block;
+	text-align: center;
+	position: relative;
+	top: 30px;
+	left: 70px;
+	font-size: 60px;
+	color: #fff;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	transition: 0.5s;
+}
+
+.container a:hover {
+	color: #292929;
+	border: 1px solid #292929;
+	cursor: pointer;
+	transition: 0.5s;
+}
