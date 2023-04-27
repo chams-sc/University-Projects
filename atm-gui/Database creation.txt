@@ -1,0 +1,18 @@
+1. Create db and table:
+
+CREATE DATABASE atmdb;
+
+CREATE TABLE usertbl (
+    FirstName VARCHAR(50) NOT NULL,
+    LastName VARCHAR(50) NOT NULL,
+    Email VARCHAR(50) NOT NULL,
+    AccountID VARCHAR(15) PRIMARY KEY,
+    Pin INT NOT NULL,
+    Balance INT );
+
+
+2. Link to mysql jar file to connect to db
+https://goo.gl/ftjWmK
+
+if using netbeans add to library the jar file
+tutorial: https://youtu.be/KX_GkSCLubM?t=548
